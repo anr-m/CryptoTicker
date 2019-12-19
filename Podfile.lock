@@ -1,0 +1,38 @@
+PODS:
+  - AnimatableReload (0.2.0)
+  - PullToRefresher (3.2)
+  - Realm (3.21.0):
+    - Realm/Headers (= 3.21.0)
+  - Realm/Headers (3.21.0)
+  - RealmSwift (3.21.0):
+    - Realm (= 3.21.0)
+  - SwiftySound (1.1.0)
+  - SwipeCellKit (2.7.1)
+
+DEPENDENCIES:
+  - AnimatableReload
+  - PullToRefresher (~> 3.1)
+  - RealmSwift
+  - SwiftySound
+  - SwipeCellKit (~> 2.7)
+
+SPEC REPOS:
+  trunk:
+    - AnimatableReload
+    - PullToRefresher
+    - Realm
+    - RealmSwift
+    - SwiftySound
+    - SwipeCellKit
+
+SPEC CHECKSUMS:
+  AnimatableReload: 9576d3019bfb103f76b5f37fa6f8915bd8307527
+  PullToRefresher: 746c1089710eb74a3a584921549296a2fe573314
+  Realm: 38e9dcb19104b58407167d99f70d4995f7c16023
+  RealmSwift: 3183cc1ad48378fbcd634311b22c0e6c44021152
+  SwiftySound: eb46cc2399cf7d94f58c372f38216e15e0a6de3e
+  SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
+
+PODFILE CHECKSUM: c708016b0b5651195fce649f7619dc1b6391cdd4
+
+COCOAPODS: 1.8.0

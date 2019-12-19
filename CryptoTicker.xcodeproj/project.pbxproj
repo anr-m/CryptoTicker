@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A4F95CFBDAC55A9EF53BA00 /* Pods_CryptoTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7673C0CE6E6987A1BD20A8A5 /* Pods_CryptoTicker.framework */; };
+		E02A65782368736B00689D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A65772368736B00689D56 /* AppDelegate.swift */; };
+		E02A657D2368736B00689D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02A657B2368736B00689D56 /* Main.storyboard */; };
+		E02A65822368736E00689D56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02A65802368736E00689D56 /* LaunchScreen.storyboard */; };
+		E02A658A236873DF00689D56 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A6589236873DF00689D56 /* Quote.swift */; };
+		E02A658C2368B55300689D56 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02A658B2368B55300689D56 /* Converter.swift */; };
+		E032AF61236EAD4700339FF9 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E032AF60236EAD4700339FF9 /* Formatter.swift */; };
+		E032AF63236EBEE200339FF9 /* QuoteDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E032AF62236EBEE200339FF9 /* QuoteDetailDataSource.swift */; };
+		E054E4EF2381AF4600A7CA08 /* QuoteCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E4EE2381AF4600A7CA08 /* QuoteCached.swift */; };
+		E054E4F123830BD500A7CA08 /* RealmMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054E4F023830BD500A7CA08 /* RealmMethods.swift */; };
+		E0C30231238B07DF00BACEDC /* cash.wav in Resources */ = {isa = PBXBuildFile; fileRef = E0C30230238B07DE00BACEDC /* cash.wav */; };
+		E0C30235238B08C600BACEDC /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = E0C30234238B08C600BACEDC /* click.wav */; };
+		E0C30237238B0EAA00BACEDC /* QuoteTableViewController+SwipeTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C30236238B0EAA00BACEDC /* QuoteTableViewController+SwipeTableViewDelegate.swift */; };
+		E0C30239238B139100BACEDC /* QuoteTableViewController+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C30238238B139100BACEDC /* QuoteTableViewController+UISearchBarDelegate.swift */; };
+		E0C3023B238C26B400BACEDC /* QuoteTableViewController+NavigationBarButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3023A238C26B400BACEDC /* QuoteTableViewController+NavigationBarButtons.swift */; };
+		E0C3023F238C317800BACEDC /* QuoteTableViewContoller+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3023E238C317800BACEDC /* QuoteTableViewContoller+DataSource.swift */; };
+		E0C30241238C319A00BACEDC /* QuoteTableViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C30240238C319A00BACEDC /* QuoteTableViewController+Delegate.swift */; };
+		E0C30243238C4F1D00BACEDC /* ConverterViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C30242238C4F1C00BACEDC /* ConverterViewController+TextFieldDelegate.swift */; };
+		E0C30245238C571100BACEDC /* QuoteTableViewController+RefreshTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C30244238C571100BACEDC /* QuoteTableViewController+RefreshTableData.swift */; };
+		E0C30249238C59D800BACEDC /* QuoteCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C30248238C59D800BACEDC /* QuoteCacheProvider.swift */; };
+		E0CCA4C523736D00006CF023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CCA4C423736D00006CF023 /* Assets.xcassets */; };
+		E0EE80C5236DD7E200BDCE01 /* QuoteWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE80C4236DD7E200BDCE01 /* QuoteWebProvider.swift */; };
+		E0EE80C7236DE2ED00BDCE01 /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE80C6236DE2ED00BDCE01 /* QuoteDetailViewController.swift */; };
+		E0EE80C9236DE31200BDCE01 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE80C8236DE31200BDCE01 /* QuoteTableViewController.swift */; };
+		E0EE80CB236DE59900BDCE01 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE80CA236DE59900BDCE01 /* QuoteCell.swift */; };
+		E0EE80D0236DEFB800BDCE01 /* QuoteHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE80CE236DEFB800BDCE01 /* QuoteHeader.swift */; };
+		E0EE80D1236DEFB800BDCE01 /* QuoteHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0EE80CF236DEFB800BDCE01 /* QuoteHeader.xib */; };
+		E0FA2CFD23899EFB00E4CE78 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FA2CFC23899EFB00E4CE78 /* OnboardingViewController.swift */; };
+		E777D276237884AE00221F1E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777D275237884AE00221F1E /* Constants.swift */; };
+		E777D2782378989B00221F1E /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777D2772378989B00221F1E /* ConverterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		540897430399DC50FAD9FB61 /* Pods-CryptoTicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTicker.debug.xcconfig"; path = "Target Support Files/Pods-CryptoTicker/Pods-CryptoTicker.debug.xcconfig"; sourceTree = "<group>"; };
+		60BB53EC1DE29EBDFF9084DB /* Pods-CryptoTicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTicker.release.xcconfig"; path = "Target Support Files/Pods-CryptoTicker/Pods-CryptoTicker.release.xcconfig"; sourceTree = "<group>"; };
+		6E0D370959B4B144C254A0F7 /* Pods-CryptoConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverter.release.xcconfig"; path = "Target Support Files/Pods-CryptoConverter/Pods-CryptoConverter.release.xcconfig"; sourceTree = "<group>"; };
+		7673C0CE6E6987A1BD20A8A5 /* Pods_CryptoTicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02A65742368736B00689D56 /* CryptoTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02A65772368736B00689D56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E02A657C2368736B00689D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E02A65812368736E00689D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E02A65832368736E00689D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02A6589236873DF00689D56 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		E02A658B2368B55300689D56 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		E032AF60236EAD4700339FF9 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		E032AF62236EBEE200339FF9 /* QuoteDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailDataSource.swift; sourceTree = "<group>"; };
+		E054E4EE2381AF4600A7CA08 /* QuoteCached.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCached.swift; sourceTree = "<group>"; };
+		E054E4F023830BD500A7CA08 /* RealmMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMethods.swift; sourceTree = "<group>"; };
+		E0C30230238B07DE00BACEDC /* cash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cash.wav; sourceTree = "<group>"; };
+		E0C30234238B08C600BACEDC /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		E0C30236238B0EAA00BACEDC /* QuoteTableViewController+SwipeTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuoteTableViewController+SwipeTableViewDelegate.swift"; sourceTree = "<group>"; };
+		E0C30238238B139100BACEDC /* QuoteTableViewController+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuoteTableViewController+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
+		E0C3023A238C26B400BACEDC /* QuoteTableViewController+NavigationBarButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuoteTableViewController+NavigationBarButtons.swift"; sourceTree = "<group>"; };
+		E0C3023E238C317800BACEDC /* QuoteTableViewContoller+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuoteTableViewContoller+DataSource.swift"; sourceTree = "<group>"; };
+		E0C30240238C319A00BACEDC /* QuoteTableViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuoteTableViewController+Delegate.swift"; sourceTree = "<group>"; };
+		E0C30242238C4F1C00BACEDC /* ConverterViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConverterViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		E0C30244238C571100BACEDC /* QuoteTableViewController+RefreshTableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuoteTableViewController+RefreshTableData.swift"; sourceTree = "<group>"; };
+		E0C30248238C59D800BACEDC /* QuoteCacheProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCacheProvider.swift; sourceTree = "<group>"; };
+		E0CCA4C423736D00006CF023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0EE80C4236DD7E200BDCE01 /* QuoteWebProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteWebProvider.swift; sourceTree = "<group>"; };
+		E0EE80C6236DE2ED00BDCE01 /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
+		E0EE80C8236DE31200BDCE01 /* QuoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewController.swift; sourceTree = "<group>"; };
+		E0EE80CA236DE59900BDCE01 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		E0EE80CE236DEFB800BDCE01 /* QuoteHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteHeader.swift; sourceTree = "<group>"; };
+		E0EE80CF236DEFB800BDCE01 /* QuoteHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteHeader.xib; sourceTree = "<group>"; };
+		E0FA2CFC23899EFB00E4CE78 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E777D275237884AE00221F1E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E777D2772378989B00221F1E /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		E9A1759E817CA10F857E2360 /* Pods-CryptoConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoConverter.debug.xcconfig"; path = "Target Support Files/Pods-CryptoConverter/Pods-CryptoConverter.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E02A65712368736B00689D56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4F95CFBDAC55A9EF53BA00 /* Pods_CryptoTicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11E44DB9F675A6FA4BE311D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7673C0CE6E6987A1BD20A8A5 /* Pods_CryptoTicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D749C33D65CBC1CA123A836 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9A1759E817CA10F857E2360 /* Pods-CryptoConverter.debug.xcconfig */,
+				6E0D370959B4B144C254A0F7 /* Pods-CryptoConverter.release.xcconfig */,
+				540897430399DC50FAD9FB61 /* Pods-CryptoTicker.debug.xcconfig */,
+				60BB53EC1DE29EBDFF9084DB /* Pods-CryptoTicker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E02A656B2368736B00689D56 = {
+			isa = PBXGroup;
+			children = (
+				E02A65762368736B00689D56 /* CryptoTicker */,
+				E02A65752368736B00689D56 /* Products */,
+				1D749C33D65CBC1CA123A836 /* Pods */,
+				11E44DB9F675A6FA4BE311D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E02A65752368736B00689D56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E02A65742368736B00689D56 /* CryptoTicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E02A65762368736B00689D56 /* CryptoTicker */ = {
+			isa = PBXGroup;
+			children = (
+				E0EE80C1236DD1F100BDCE01 /* Model */,
+				E0EE80C2236DD1F800BDCE01 /* View */,
+				E0EE80C3236DD1FF00BDCE01 /* Controller */,
+				E0CCA4C423736D00006CF023 /* Assets.xcassets */,
+				E0C30229238AD07A00BACEDC /* Sounds */,
+				E02A65772368736B00689D56 /* AppDelegate.swift */,
+				E02A65832368736E00689D56 /* Info.plist */,
+			);
+			path = CryptoTicker;
+			sourceTree = "<group>";
+		};
+		E0C30229238AD07A00BACEDC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E0C30230238B07DE00BACEDC /* cash.wav */,
+				E0C30234238B08C600BACEDC /* click.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		E0EE80C1236DD1F100BDCE01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E777D275237884AE00221F1E /* Constants.swift */,
+				E02A658B2368B55300689D56 /* Converter.swift */,
+				E032AF60236EAD4700339FF9 /* Formatter.swift */,
+				E02A6589236873DF00689D56 /* Quote.swift */,
+				E054E4EE2381AF4600A7CA08 /* QuoteCached.swift */,
+				E032AF62236EBEE200339FF9 /* QuoteDetailDataSource.swift */,
+				E0C30248238C59D800BACEDC /* QuoteCacheProvider.swift */,
+				E0EE80C4236DD7E200BDCE01 /* QuoteWebProvider.swift */,
+				E054E4F023830BD500A7CA08 /* RealmMethods.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0EE80C2236DD1F800BDCE01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E02A657B2368736B00689D56 /* Main.storyboard */,
+				E02A65802368736E00689D56 /* LaunchScreen.storyboard */,
+				E0EE80CA236DE59900BDCE01 /* QuoteCell.swift */,
+				E0EE80CE236DEFB800BDCE01 /* QuoteHeader.swift */,
+				E0EE80CF236DEFB800BDCE01 /* QuoteHeader.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0EE80C3236DD1FF00BDCE01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0EE80C8236DE31200BDCE01 /* QuoteTableViewController.swift */,
+				E0C3023E238C317800BACEDC /* QuoteTableViewContoller+DataSource.swift */,
+				E0C30240238C319A00BACEDC /* QuoteTableViewController+Delegate.swift */,
+				E0C3023A238C26B400BACEDC /* QuoteTableViewController+NavigationBarButtons.swift */,
+				E0C30244238C571100BACEDC /* QuoteTableViewController+RefreshTableData.swift */,
+				E0C30236238B0EAA00BACEDC /* QuoteTableViewController+SwipeTableViewDelegate.swift */,
+				E0C30238238B139100BACEDC /* QuoteTableViewController+UISearchBarDelegate.swift */,
+				E0EE80C6236DE2ED00BDCE01 /* QuoteDetailViewController.swift */,
+				E777D2772378989B00221F1E /* ConverterViewController.swift */,
+				E0C30242238C4F1C00BACEDC /* ConverterViewController+TextFieldDelegate.swift */,
+				E0FA2CFC23899EFB00E4CE78 /* OnboardingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E02A65732368736B00689D56 /* CryptoTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E02A65862368736E00689D56 /* Build configuration list for PBXNativeTarget "CryptoTicker" */;
+			buildPhases = (
+				057B05D55E8D002BF7B68FE9 /* [CP] Check Pods Manifest.lock */,
+				E02A65702368736B00689D56 /* Sources */,
+				E02A65712368736B00689D56 /* Frameworks */,
+				E02A65722368736B00689D56 /* Resources */,
+				37D55EF07D12246519F2DF27 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoTicker;
+			productName = CryptoConverter;
+			productReference = E02A65742368736B00689D56 /* CryptoTicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E02A656C2368736B00689D56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Anuarbek Mukhanov";
+				TargetAttributes = {
+					E02A65732368736B00689D56 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = E02A656F2368736B00689D56 /* Build configuration list for PBXProject "CryptoTicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E02A656B2368736B00689D56;
+			productRefGroup = E02A65752368736B00689D56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E02A65732368736B00689D56 /* CryptoTicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E02A65722368736B00689D56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02A65822368736E00689D56 /* LaunchScreen.storyboard in Resources */,
+				E0C30235238B08C600BACEDC /* click.wav in Resources */,
+				E02A657D2368736B00689D56 /* Main.storyboard in Resources */,
+				E0CCA4C523736D00006CF023 /* Assets.xcassets in Resources */,
+				E0EE80D1236DEFB800BDCE01 /* QuoteHeader.xib in Resources */,
+				E0C30231238B07DF00BACEDC /* cash.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		057B05D55E8D002BF7B68FE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoTicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37D55EF07D12246519F2DF27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoTicker/Pods-CryptoTicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoTicker/Pods-CryptoTicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoTicker/Pods-CryptoTicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E02A65702368736B00689D56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02A658A236873DF00689D56 /* Quote.swift in Sources */,
+				E777D276237884AE00221F1E /* Constants.swift in Sources */,
+				E054E4EF2381AF4600A7CA08 /* QuoteCached.swift in Sources */,
+				E0EE80C9236DE31200BDCE01 /* QuoteTableViewController.swift in Sources */,
+				E0C3023F238C317800BACEDC /* QuoteTableViewContoller+DataSource.swift in Sources */,
+				E02A658C2368B55300689D56 /* Converter.swift in Sources */,
+				E0C30243238C4F1D00BACEDC /* ConverterViewController+TextFieldDelegate.swift in Sources */,
+				E032AF61236EAD4700339FF9 /* Formatter.swift in Sources */,
+				E0EE80D0236DEFB800BDCE01 /* QuoteHeader.swift in Sources */,
+				E0FA2CFD23899EFB00E4CE78 /* OnboardingViewController.swift in Sources */,
+				E02A65782368736B00689D56 /* AppDelegate.swift in Sources */,
+				E0C3023B238C26B400BACEDC /* QuoteTableViewController+NavigationBarButtons.swift in Sources */,
+				E032AF63236EBEE200339FF9 /* QuoteDetailDataSource.swift in Sources */,
+				E0C30241238C319A00BACEDC /* QuoteTableViewController+Delegate.swift in Sources */,
+				E0C30239238B139100BACEDC /* QuoteTableViewController+UISearchBarDelegate.swift in Sources */,
+				E0C30249238C59D800BACEDC /* QuoteCacheProvider.swift in Sources */,
+				E0EE80CB236DE59900BDCE01 /* QuoteCell.swift in Sources */,
+				E0EE80C7236DE2ED00BDCE01 /* QuoteDetailViewController.swift in Sources */,
+				E054E4F123830BD500A7CA08 /* RealmMethods.swift in Sources */,
+				E0C30237238B0EAA00BACEDC /* QuoteTableViewController+SwipeTableViewDelegate.swift in Sources */,
+				E0EE80C5236DD7E200BDCE01 /* QuoteWebProvider.swift in Sources */,
+				E777D2782378989B00221F1E /* ConverterViewController.swift in Sources */,
+				E0C30245238C571100BACEDC /* QuoteTableViewController+RefreshTableData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E02A657B2368736B00689D56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E02A657C2368736B00689D56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E02A65802368736E00689D56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E02A65812368736E00689D56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E02A65842368736E00689D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E02A65852368736E00689D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E02A65872368736E00689D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 540897430399DC50FAD9FB61 /* Pods-CryptoTicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5JC2BGX68;
+				INFOPLIST_FILE = "$(SRCROOT)/CryptoTicker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuarbekmukhanov.CryptoTicker;
+				PRODUCT_NAME = CryptoTicker;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E02A65882368736E00689D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60BB53EC1DE29EBDFF9084DB /* Pods-CryptoTicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5JC2BGX68;
+				INFOPLIST_FILE = "$(SRCROOT)/CryptoTicker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuarbekmukhanov.CryptoTicker;
+				PRODUCT_NAME = CryptoTicker;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E02A656F2368736B00689D56 /* Build configuration list for PBXProject "CryptoTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E02A65842368736E00689D56 /* Debug */,
+				E02A65852368736E00689D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E02A65862368736E00689D56 /* Build configuration list for PBXNativeTarget "CryptoTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E02A65872368736E00689D56 /* Debug */,
+				E02A65882368736E00689D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E02A656C2368736B00689D56 /* Project object */;
+}
