@@ -34,6 +34,10 @@ class RealmMethods {
         
         var queriedQuoteArray: [QuoteCached] = []
         
+        if query == "" {
+            return readData()
+        }
+        
         do {
             let realm = try Realm()
             let results = realm.objects(QuoteCached.self)
